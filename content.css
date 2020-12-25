@@ -1,0 +1,60 @@
+section.blog{
+    display:block;
+    justify-content:center;
+    align-content:center;
+    padding:25px 150px;
+    margin-bottom:100px;
+}
+section.blog>.line{
+    display:flex;
+    border:1px solid grey;
+    width:100%;
+    margin-bottom: 50px;
+}
+section.blog>.line>.picture{
+    flex: 50%;height:300px;
+    opacity:0.7;
+}
+section.blog>.line>.picture:hover{
+    opacity:1; transition: opacity 0.5s;
+}
+section.blog>.line>.picture-1{
+    background-image:url(article-1.jpg);
+    background-size:cover;
+}
+section.blog>.line>.picture-2{
+    background-image:url(article-2.jpg);
+    background-size:cover;
+}
+section.blog>.line>.text{
+    flex: 50%;
+    align-content:center;
+    justify-content:center;
+    padding:10px 25px;
+}
+section.blog>.line>.text>.title{
+    font-size:2em;font-weight:100;
+    align-content:center;
+    justify-content:center;
+    margin-bottom:10px;
+}
+section.blog>.line>.text>.article{
+    font-size:0.8em;color:grey;
+    align-content:center;
+    justify-content:center;
+    margin-bottom:40px;
+    line-height: 1.5em;
+}
+section.blog>.line>.text>.note{
+    display:flex;font-size:0.8em;
+    color:grey;align-content:center;
+}
+section.blog>.line>.text>.note>.block{
+    padding-right: 30px;
+    padding-top: 5px;
+}
+@media (max-width:800px){
+    section.blog>.line{
+        display:block;
+    }
+}
